@@ -5,6 +5,7 @@ import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Matrix
 import android.os.Environment
+import com.dicoding.picodiploma.meatmind.R
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*

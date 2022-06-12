@@ -14,6 +14,8 @@ import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
 import com.dicoding.picodiploma.meatmind.databinding.ActivityCameraBinding
+import com.dicoding.picodiploma.meatmind.ui.home.HomeFragment
+import com.dicoding.picodiploma.meatmind.ui.home.createFile
 import java.nio.file.Files.createFile
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
@@ -77,7 +79,7 @@ class CameraActivity : AppCompatActivity() {
                         "isBackCamera",
                         cameraSelector == CameraSelector.DEFAULT_BACK_CAMERA
                     )
-                    setResult(MainActivity.CAMERA_X_RESULT, intent)
+                    setResult(HomeFragment.CAMERA_X_RESULT, intent)
                     finish()
                 }
             }
