@@ -6,7 +6,9 @@
         <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/drawable/button_scan.xml" value="0.191" />
         <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/drawable/ic_camera.xml" value="0.191" />
         <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/drawable/ic_home.xml" value="0.191" />
-        <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/activity_camera.xml" value="0.17395833333333333" />
+        <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/activity_camera.xml" value="0.22" />
+        <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/activity_camera_intent.xml" value="0.22" />
+        <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/activity_camera_start.xml" value="0.2557291666666667" />
         <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/activity_main_screen.xml" value="0.36666666666666664" />
         <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/activity_splash_screen.xml" value="0.23020833333333332" />
         <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/fragment_dashboard.xml" value="0.36666666666666664" />

@@ -47,11 +47,13 @@
 
     <Button
         android:id="@+id/ScanButton"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:background="@drawable/button_scan"
+        android:backgroundTint="#FFFFFF"
         android:drawableRight="@drawable/scan"
+        android:foregroundTint="#FFFFFF"
         android:text="@string/SCAN"
         android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
