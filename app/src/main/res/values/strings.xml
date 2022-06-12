@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MeatMind</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="meatmind">MEATMIND</string>
+    <string name="title_recipe">recipe</string>
+    <string name="title_maps">maps</string>
+    <string name="SCAN">SCAN</string>
+    <string name="home_sub_title">A man loves the meat in his youth that he cannot endure in his age.</string>
+</resources>
