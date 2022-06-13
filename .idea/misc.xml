@@ -4,17 +4,20 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/drawable/button_scan.xml" value="0.191" />
-        <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/drawable/ic_camera.xml" value="0.191" />
         <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/drawable/ic_home.xml" value="0.191" />
-        <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/activity_camera.xml" value="0.22" />
-        <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/activity_camera_intent.xml" value="0.22" />
-        <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/activity_camera_start.xml" value="0.2557291666666667" />
-        <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/activity_camera_take.xml" value="0.25" />
+        <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/activity_camera.xml" value="0.17395833333333333" />
         <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/activity_main_screen.xml" value="0.36666666666666664" />
-        <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/activity_splash_screen.xml" value="0.23020833333333332" />
         <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/fragment_dashboard.xml" value="0.36666666666666664" />
         <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
-        <entry key="..\:/Android/Android/project/MeatMind/app/src/main/res/xml/file_paths.xml" value="0.25104166666666666" />
+        <entry key="..\:/Dicoding/MeatMind/app/src/main/res/layout/activity_camera_start.xml" value="0.20208333333333334" />
+        <entry key="..\:/Dicoding/MeatMind/app/src/main/res/layout/activity_camera_take.xml" value="0.20208333333333334" />
+        <entry key="..\:/Dicoding/MeatMind/app/src/main/res/layout/activity_main_screen.xml" value="0.20208333333333334" />
+        <entry key="..\:/Dicoding/MeatMind/app/src/main/res/layout/fragment_maps.xml" value="0.3875" />
+        <entry key="..\:/Dicoding/MeatMind/app/src/main/res/layout/fragment_recipe.xml" value="0.22" />
+        <entry key="..\:/Dicoding/MeatMind/app/src/main/res/layout/grid_content.xml" value="0.38645833333333335" />
+        <entry key="..\:/Dicoding/MeatMind/app/src/main/res/layout/recipe_detail.xml" value="0.2547814207650273" />
+        <entry key="..\:/Dicoding/MeatMind/app/src/main/res/layout/recipe_list_footer.xml" value="0.28984375" />
+        <entry key="..\:/Dicoding/MeatMind/app/src/main/res/layout/recipe_list_item.xml" value="0.38645833333333335" />
       </map>
     </option>
   </component>
