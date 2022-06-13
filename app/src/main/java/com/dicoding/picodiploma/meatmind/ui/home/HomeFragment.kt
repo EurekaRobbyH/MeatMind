@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.dicoding.picodiploma.meatmind.R
-import com.dicoding.picodiploma.meatmind.camera.CameraActivity
+import com.dicoding.picodiploma.meatmind.camera.CameraTakeActivity
 import com.dicoding.picodiploma.meatmind.databinding.FragmentHomeBinding
 
 
@@ -32,7 +32,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         (activity as AppCompatActivity).supportActionBar?.hide()
 
         binding.ScanButton.setOnClickListener{
-            val intent = Intent(requireActivity(),CameraActivity::class.java)
+            val intent = Intent(requireActivity(), CameraTakeActivity::class.java)
             startActivity(intent)
         }
     }
