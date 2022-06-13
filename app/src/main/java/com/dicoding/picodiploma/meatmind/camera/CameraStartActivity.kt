@@ -1,12 +1,10 @@
 package com.dicoding.picodiploma.meatmind.camera
 
 import android.content.Intent
-import android.os.Build
-import android.os.Bundle
-import android.view.WindowInsets
-import android.view.WindowManager
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
 import androidx.camera.core.ImageCaptureException
@@ -14,10 +12,11 @@ import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
 import com.dicoding.picodiploma.meatmind.databinding.ActivityCameraStartBinding
+import java.nio.file.Files.createFile
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
-class CameraActivity : AppCompatActivity() {
+class CameraStartActivity : AppCompatActivity() {
     private lateinit var binding: ActivityCameraStartBinding
     private lateinit var cameraExecutor: ExecutorService
 
@@ -26,6 +25,9 @@ class CameraActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+        supportActionBar?.hide()
 
         binding = ActivityCameraStartBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -42,7 +44,6 @@ class CameraActivity : AppCompatActivity() {
 
     public override fun onResume() {
         super.onResume()
-        hideSystemUI()
         startCamera()
     }
 
@@ -63,7 +64,7 @@ class CameraActivity : AppCompatActivity() {
             object : ImageCapture.OnImageSavedCallback {
                 override fun onError(exc: ImageCaptureException) {
                     Toast.makeText(
-                        this@CameraActivity,
+                        this@CameraStartActivity,
                         "Gagal mengambil gambar.",
                         Toast.LENGTH_SHORT
                     ).show()
@@ -76,7 +77,7 @@ class CameraActivity : AppCompatActivity() {
                         "isBackCamera",
                         cameraSelector == CameraSelector.DEFAULT_BACK_CAMERA
                     )
-                    setResult(MainActivity.CAMERA_X_RESULT, intent)
+                    setResult(CameraTakeActivity.CAMERA_X_RESULT, intent)
                     finish()
                 }
             }
@@ -114,18 +115,5 @@ class CameraActivity : AppCompatActivity() {
                 ).show()
             }
         }, ContextCompat.getMainExecutor(this))
-    }
-
-    private fun hideSystemUI() {
-        @Suppress("DEPRECATION")
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            window.insetsController?.hide(WindowInsets.Type.statusBars())
-        } else {
-            window.setFlags(
-                WindowManager.LayoutParams.FLAG_FULLSCREEN,
-                WindowManager.LayoutParams.FLAG_FULLSCREEN
-            )
-        }
-        supportActionBar?.hide()
     }
 }
